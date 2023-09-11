@@ -1,0 +1,108 @@
+:root {
+    --card-bg-color: #072226;
+		--color-green: rgb(17, 216, 17);
+}
+
+.location {
+	background-color: var(--card-bg-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 40em;
+	height: 7em;
+	margin: 3em 0 4em 22em;
+	color: white;
+}
+
+.location__item {
+	display: inline;
+	margin: 1em;
+}
+
+.location__label {
+	margin: 0.5em;
+	flex-direction: column;
+}
+
+.resident {
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--card-bg-color);
+    color: white;
+    border-radius: 0.7em;
+    overflow: hidden;
+		transition: transform 100ms ease;
+}
+
+.resident:hover {
+	transform: scale(1.03);
+}
+
+.resident__header {
+    position: relative;
+}
+
+.resident__status {
+    position: absolute;
+    top: 2.5em;
+    background-color: var(--card-bg-color);
+    width: 40%;
+    padding: 0.3em 0.7em;
+    border-radius: 0 0.5em 0.5em 0;
+    display: flex;
+    gap: 0.7em;
+    align-items: center;
+}
+
+.resident__status__circle {
+    display: block;
+    width: 14px;
+    aspect-ratio: 1;
+    background-color: #aaa;
+    border-radius: 50%;
+}
+
+.Alive {
+	background-color: rgb(97, 221, 25);
+}
+
+.Dead {
+	background-color: red;
+}
+
+.resident__body {
+    padding: 1.5em 1em 2.5em;
+}
+
+.resident__name {
+    color: rgb(0, 213, 71);
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+.resident__hr {
+    margin-bottom: 0.5em;
+		border-color: #aaa3;
+}
+
+.resident__list {
+    display: grid;
+    gap: 0.7em;
+}
+
+.resident__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.resident__label {
+	font-size: 0.8em;
+	padding-left: 1em;
+	color: aaa;
+}
+
+.resident__value {
+	font-weight: 500;
+}

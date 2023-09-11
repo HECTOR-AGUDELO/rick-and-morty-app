@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Delicious+Handrawn&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,300;0,700;0,900;1,900&display=swap');
+
+/*--- RESET---*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #05292e;
+}
+
+h1, h2, h3, ul, hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    text-shadow: 0 0 15px #ffff00;
+    color: #00ffff;
+    font-family: 'Delicious Handrawn', cursive;
+    animation: title is infinite;
+    margin: 0.3em;
+}
+
+@keyframes title {
+    50% {
+        text-shadow: 0 0 15px #00ffff;
+    color: #ffff00;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h2 {
+    margin-bottom: 1em;
+	color: var(--color-green);
+}
+
+input {
+    outline: none;
+    font-family: inherit;
+    border: none;
+    border-radius: 0.3em 0 0 0.3em;
+    font-size: 1.5em;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    background-color: rgb(35, 216, 35);
+    border: none;
+    border-radius: 0 0.3em 0.3em 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.resident__container {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
